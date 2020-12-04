@@ -1,0 +1,10 @@
+##YAML Template
+---
+
+default: -p environment -p json_report -p html_report
+## default: -p environment -p html_report 
+html_report: --format progress --format html --out=results/html_report/features_report.html
+json_report: --format=message --out=results/cucumber_json/features_report.json
+environment: ENVIRONMENT=environment
+## -f Cucumber::Formatter::Json
+## --publish-quiet
