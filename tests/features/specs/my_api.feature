@@ -10,4 +10,4 @@ Funcionalidade: Validar api de signin
 Cenário: Validar o signin
     Dado que eu acesso a api de testes
     Quando eu realizo a requisição de signin
-    Então um retorno de realizado deverá acontecer
+    Então um retorno de status OK deverá acontecer

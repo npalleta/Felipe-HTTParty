@@ -5,7 +5,7 @@ require 'yaml'
 class Settings
     # ---
     def self.get_environment_path
-        yaml_file_path   = "/config/#{ENVIRONMENT}.yaml"
+        yaml_file_path   = "/env_url/#{ENVIRONMENT}.yaml"
         environment_path = YAML.load_file(File.dirname(__FILE__) + yaml_file_path)
         return environment_path
     end
