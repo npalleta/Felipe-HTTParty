@@ -20,8 +20,8 @@ class FelipeAPI
     def response
         expect(@result.code).to eql(200)
         # ---
-        puts "\nBody: #{@result.body}"
-        puts "\nStatus: #{@result.code} - #{@result.message}"
-        puts "\nHeaders: #{@result.headers.inspect}"
+        puts "Body: #{@result.body}"
+        puts "Status: #{@result.code} - #{@result.message}"
+        puts "Headers: #{@result.headers.inspect}"
     end
 end

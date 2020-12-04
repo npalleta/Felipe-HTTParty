@@ -1,9 +1,9 @@
 # frozen_string_literal: true ...
 # ---
 
-Dir[File.join(File.dirname(__FILE__), '../apis/*.rb')].each { |file| require file }
+Dir[File.join(File.dirname(__FILE__), '../apis/*.rb')].each { |f| require f }
 
-# Dir[File.join(File.dirname(__FILE__), '../apis/*.rb')].select{ |f| File.file? f }.map{ |f| puts File.basename f }
+Dir[File.join(File.dirname(__FILE__), '../apis/*.rb')].select{ |f| File.file? f }.map{ |f| puts File.basename f }
 
 module APIs
     #---

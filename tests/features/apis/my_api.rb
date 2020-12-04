@@ -23,8 +23,8 @@ class MyAPI
         expect(@result.code).to eql(200)
         expect(JSON.parse(@body)['username']).to eql(@result.parsed_response['username'])
         # puts results
-        puts "\nBody: #{@result.body}"
-        puts "\nStatus: #{@result.code}"
-        puts "\nHeaders: #{@result.headers.inspect}"
+        puts "Body: #{@result.body}"
+        puts "Status: #{@result.code}"
+        puts "Headers: #{@result.headers.inspect}"
     end
 end

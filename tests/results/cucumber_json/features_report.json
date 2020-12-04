@@ -1,0 +1,117 @@
+[
+  {
+    "uri": "features/specs/felipe_api.feature",
+    "id": "validar-api-do-felipe",
+    "keyword": "Funcionalidade",
+    "name": "Validar API do Felipe",
+    "description": "    - Eu, como testador, irei realizar\n    uma chamada a API do Felipe... ",
+    "line": 4,
+    "comments": [
+      {
+        "value": "# utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "validar-api-do-felipe;validar-que-a-api-do-felipe-funciona",
+        "keyword": "Cenário",
+        "name": "Validar que a API do Felipe funciona",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@felipe",
+            "line": 9
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesso a api do Felipe",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/felipe_api_stepd.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2943307043
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/specs/my_api.feature",
+    "id": "validar-api-de-signin",
+    "keyword": "Funcionalidade",
+    "name": "Validar api de signin",
+    "description": "    - Eu, como testador, irei realizar\n    um signin em uma API... ",
+    "line": 4,
+    "comments": [
+      {
+        "value": "# utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "validar-api-de-signin;validar-o-signin",
+        "keyword": "Cenário",
+        "name": "Validar o signin",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@api",
+            "line": 9
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesso a api de testes",
+            "line": 11,
+            "output": [
+              "Iniciando o acesso a API...\n\n"
+            ],
+            "match": {
+              "location": "features/step_definitions/my_api_stepd.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52895
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "eu realizo a requisição de signin",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/my_api_stepd.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 878364690
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "um retorno de status OK deverá acontecer",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/my_api_stepd.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218680
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
